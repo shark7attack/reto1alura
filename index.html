@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>    
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color: #BDC3C7;">
+    <div class="container">
+        <div class="logo"></div>
+        <h1 class="titulo">Encriptador de texto</h1>
+
+        <div class="message">
+            <textarea class="texto blue-input" type="text" placeholder="Ingrese el texto aqui" alt=""></textarea>
+        </div>
+        <div class="buttons">
+            <button class="button number1" onclick="f_encriptacion()">Encriptar</button>
+            <button class=" button number2" onclick="f_desencriptacion()">Desencriptar</button>
+        </div>
+
+        <div class="answers">
+            <textarea class="encriptado" type="text" ></textarea>
+            <br>
+            <button class="button copiar" onclick="f_copiar()">Copiar</button>
+        </div>
+    </div>
+
+    <img src="mensaje.jpg" alt="grafica de mensaje" class="imagen">
+
+    <script type="text/javascript" src="crypt.js"></script>
+    <script type="text/javascript" src="block.js"></script>
+</body>
+</html>
